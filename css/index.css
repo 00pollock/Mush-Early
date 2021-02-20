@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #efece9;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  width: 100%;
+  height: 100vh;
+}
+
+h1,
+.logo {
+  font-family: 'Italiana', serif;
+}
+
+h1,
+.logo,
+img {
+  color: #000;
+}
+
+h1 {
+  line-height: 1;
+  font-size: 9.2rem;
+  font-weight: 100;
+  margin-left: -3px;
+}
+
+p {
+  letter-spacing: -1px;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#header {
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+}
+
+#header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .container .logo span a {
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+#header .container .toggle {
+  cursor: pointer;
+}
+
+#header .container .toggle i {
+  font-size: 2.4rem;
+  transform: rotate(-25deg);
+}
+
+#main {
+  margin-top: 14rem;
+}
+
+#main p {
+  font-size: 2.8rem;
+  width: 60%;
+  font-weight: 300;
+  margin-top: 4rem;
+}
+
+#main .social {
+  margin-top: 3rem;
+}
+
+#main .social i {
+  display: inline-block;
+  margin-right: 2rem;
+  font-size: 3.8rem;
+  color: #333;
+}
+
+#footer {
+  padding: 13rem 0;
+}
+
+#footer p {
+  font-weight: 300;
+  font-size: 1.6rem;
+  letter-spacing: -1px;
+  color: #777777;
+}
+
+footer a {
+  display: inline-block;
+  margin-top: 2rem;
+  /* text-decoration: none; */
+  color: #000;
+  font-size: 2.8rem;
+  letter-spacing: -1px;
+}
+
+@media only screen and (max-width: 1290px) {
+  main p {
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body {
+    min-height: 100vh !important;
+  }
+  .container {
+    width: 90%;
+  }
+
+  #header {
+    padding: 2rem 0 !important;
+  }
+
+  main {
+    margin-top: 7rem !important;
+  }
+
+  main h1 {
+    font-size: 5.4rem;
+  }
+
+  main p {
+    width: 100% !important;
+    font-size: 2rem !important;
+    /* text-align: justify; */
+
+    margin-top: 3rem !important;
+  }
+
+  #footer {
+    padding: 9rem 0 !important;
+  }
+
+  #footer a {
+    font-size: 2.4rem !important;
+  }
+}
+
+.darkmode,
+.darkmode * {
+  background-color: #191919;
+  color: #f7c99b !important;
+}
+
+.dark-p {
+  opacity: 0.7;
+}
